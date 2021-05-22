@@ -1,14 +1,116 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100;1,500&display=swap"
+	 rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+
+	<title>Card Validation</title>
+</head>
+
+<body>
+
+	<div class="app-container">
+		<!--container de la aplicación -->
+
+		<header class="header-container">
+
+			<div class="header-total">
+				<span>Total:</span>
+			<span class="span-header-total">$50.000</span>
+		</div>
+
+		<div class="header-logo">
+			<img class="imagen" src="./IMG/logoEmpresa.png">
+		</div>
+	</header>
+
+
+	
+
+
+
+	<main class="forms-container"> 
+    <!--container de los formularios -->
+
+		<form class="card-num-container" autocomplete="off" novalidate>
+			<fieldset class="card-number">
+				<label for="card-num">Número de tarjeta</label>
+					<input class="cc-number" id="cc-number" type="num" maxlength="12" value="" placeholder="1234 5678 9123 4567" required/>
+				 
+			</fieldset>
+
+			<fieldset class="card-holder">
+				<label for="card-num">Nombre de tarjeta</label>
+				<input placeholder="Juana P Perez Z" type="text" required/>
+			</fieldset>
+
+			<fieldset class="card-expiration">
+				<div class="expiry-ccv">
+					<div class="cont expiration-date">
+						 
+                <label for="month">Fecha de vencimiento</label>
+                <select id="month" name="month">
+                  <option selected >Enero</option>
+                  <option>Febrero</option>
+                  <option>Marzo</option>
+                  <option>Abril</option>
+                  <option>Mayo</option>
+                  <option>Junio</option>
+                  <option>Julio</option>
+                  <option>Agosto</option>
+                  <option>Septiembre</option>
+                  <option>Octubre</option>
+                  <option>Noviembre</option>
+                  <option>Diciembre</option>
+                </select>
+              
+              
+                <label for="month"></label>
+                <select id="month" name="month">
+                  <option selected>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                  <option>2026</option>
+                </select>
+              
+  	        </div>
+
+					<div class="cont-ccv">
+						<label for="card-ccv">CCV</label>
+						<input type="num" maxlength="3" />
+					</div>
+				</div>
+			</fieldset>
+
+
+			<fieldset class="button-container">
+
+					<button type="button" class="volver">Volver</button>
+					<button type="button" class="comprar">Confirmar Compra</button>
+			
+			</fieldset>
+		</form>
+	</main>
+  <footer>
+    <p class="footer-text">Compra seguro con nosotros</p>
+		<div class="logo-container">
+			<img  class="logo-app" src="./IMG/logoApp.png" alt="">
+		</div>
+  </footer>
+</div>
+ 
+<script src="index.js" type="module"></script>
+</body>
 </html>
