@@ -13,6 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,100;1,500&display=swap"
 	 rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script defer type="module" src="./index.js"></script>
 
 
 	<title>Card Validation</title>
@@ -46,13 +47,13 @@
 		<form class="card-num-container" autocomplete="off" novalidate>
 			<fieldset class="card-number">
 				<label for="card-num">Número de tarjeta</label>
-					<input class="cc-number" id="cc-number" type="num" maxlength="12" value="" placeholder="1234 5678 9123 4567" required/>
+					<input class="cc-number" id="cc-number" type="num" value="" placeholder="1234 5678 9123 4567" required/>
 				 
 			</fieldset>
 
 			<fieldset class="card-holder">
 				<label for="card-num">Nombre de tarjeta</label>
-				<input placeholder="Juana P Perez Z" type="text" required/>
+				<input placeholder="Marceline R Baptista G" type="text" required/>
 			</fieldset>
 
 			<fieldset class="card-expiration">
@@ -97,8 +98,8 @@
 
 			<fieldset class="button-container">
 
-					<button type="button" class="volver">Volver</button>
-					<button type="button" class="comprar">Confirmar Compra</button>
+					<button type="text" class="volver">Volver</button>
+					<button type="text" id="confirmar" class="comprar" >Confirmar</button>
 			
 			</fieldset>
 		</form>
@@ -111,6 +112,6 @@
   </footer>
 </div>
  
-<script src="index.js" type="module"></script>
+
 </body>
 </html>
