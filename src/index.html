@@ -44,7 +44,7 @@
 	<main class="forms-container"> 
     <!--container de los formularios -->
 
-		<form class="card-num-container" autocomplete="off" novalidate>
+		<form class="card-num-container" action="#" autocomplete="off">
 			<fieldset class="card-number">
 				<label for="card-num">Número de tarjeta</label>
 					<input class="cc-number" id="cc-number" type="num" value="" placeholder="1234 5678 9123 4567" required/>
@@ -53,7 +53,7 @@
 
 			<fieldset class="card-holder">
 				<label for="card-num">Nombre de tarjeta</label>
-				<input placeholder="Marceline R Baptista G" type="text" required/>
+				<input placeholder="Marceline R Baptista G" type="text only" required/>
 			</fieldset>
 
 			<fieldset class="card-expiration">
@@ -90,7 +90,7 @@
 
 					<div class="cont-ccv">
 						<label for="card-ccv">CCV</label>
-						<input type="num" maxlength="3" />
+						<input type="num" minlength="3" maxlength="3" required/>
 					</div>
 				</div>
 			</fieldset>

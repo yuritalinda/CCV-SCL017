@@ -1,4 +1,4 @@
-import {validator} from './validator' ;
+import validator from './validator.js' ;
 
 //Se añade un Event listener...
 document.getElementById("confirmar").addEventListener("click", getValueInput);
@@ -7,7 +7,13 @@ document.getElementById("confirmar").addEventListener("click", getValueInput);
 function getValueInput() {
   let inputValue = Array.from(document.getElementById("cc-number").value.replace(/\D/g, '')); 
 
-  validator(inputValue);
+  let prueba = validator.isValid(inputValue);
+
+    console.log(prueba);
+
+  let prueba2 = validator.maskify(inputValue);
+  
+    console.log(prueba2);
 
   
 
