@@ -7,18 +7,30 @@ document.getElementById("confirmar").addEventListener("click", getValueInput);
 function getValueInput() {
   let inputValue = Array.from(document.getElementById("cc-number").value.replace(/\D/g, '')); 
 
+
+  
+
   let prueba = validator.isValid(inputValue);
 
     console.log(prueba);
 
-  let prueba2 = validator.maskify(inputValue);
+
+};
+
+//evento de teclado
+
+
+
+// funcion para enmascarar el numero
+function maskValueInput(){
   
-    console.log(prueba2);
-
+  let inputValueString = document.getElementById("cc-number").value.replace(/\D/g, '');
   
+  let prueba2 = validator.maskify(inputValueString);
+  
+  console.log(prueba2); 
 
-
-}
+} 
 
 
 
