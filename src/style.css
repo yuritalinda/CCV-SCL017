@@ -51,6 +51,16 @@ padding: 10px;;
   padding: 0;
 }
 
+.verificado img{
+  width: 15px;
+  height: 15px;
+}
+
+.cancelado img{
+  width: 15px;
+  height: 15px;
+}
+
 fieldset{
   border: none;
   font-size: larger;
@@ -94,14 +104,15 @@ button{
   cursor: pointer;
   border: none;
   width: 100%;
+  margin: 5px;
 }
 
-.comprar{
+.confirmar{
   background-color: rgb(124, 187, 124);
   
 }
 
-.comprar:hover{
+.confirmar:hover{
   color: #ffffff;
 
 }
@@ -125,3 +136,6 @@ footer{
   height: auto;
 }
 
+.hide{
+  display: none;
+}
