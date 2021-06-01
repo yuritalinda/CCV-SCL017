@@ -34,10 +34,21 @@ document.getElementById("confirmar").addEventListener("click", maskValueInput);
 function maskValueInput(){
   
   let inputValueString = Array.from(document.getElementById("cc-number").value.replace(/\D/g, ''));
+  console.log(inputValueString);
   
-  let numMask =  validator.maskify(inputValueString);
+  let arrayMask =  validator.maskify(inputValueString);
+  console.log(arrayMask);
+ 
 
-  console.log(numMask);
+  
+  document.getElementById("cc-number").value = arrayMask; 
+
+  
+  
+
+ 
+
+  
   
 
 } 

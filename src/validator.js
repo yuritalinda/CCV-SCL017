@@ -42,7 +42,7 @@ const validator = {
 
       let stringLength = cardNumString.length - 4;
   
-      if (stringLength <= 0) console.log("error, no puede haber tarjeta con menos");
+      if (stringLength <= 0) console.log("error, no puede haber tarjeta con menos numeros");
   
       for (let i = 0; i <stringLength; i++) {
           cardNumString[i] = '#';
